@@ -1,5 +1,6 @@
 provider "aws" {
-  region = var.region
+  description = "AWS region"
+  default     = "eu-west-3"
 }
 
 data "aws_ami" "ubuntu" {
